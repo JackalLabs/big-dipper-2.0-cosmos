@@ -9,17 +9,33 @@
   "themes": {
     "default": "dark",
     "themeList": [
-      "dark",
-      "deuteranopia",
-      "tritanopia"
+      "dark"
     ],
+    "light": {
+     "primary": {},
+      "background": {},
+      "text": {},
+      "custom": {
+        "general": {
+          "icon": "#999999"
+        },
+        "fonts": {},
+        "primaryData": {},
+        "results": {},
+        "tokenomics": {},
+        "condition": {},
+        "charts": {},
+        "tags": {},
+        "wallet": {}
+      }
+    },
     "dark": {
       "primary": {
-        "main": "#FE4080",
+        "main": "#1B1C16",
         "contrastText": "#FFFFFF"
       },
       "background": {
-        "default": "#000000",
+        "default": "#DDDCCE",
         "paper": "#0F101C"
       },
       "divider": "#363A51",
@@ -107,24 +123,6 @@
           "textSecondary": "#DDDDDD"
         }
       }
-    },
-    "light": {
-      "primary": {},
-      "background": {},
-      "text": {},
-      "custom": {
-        "general": {
-          "icon": "#999999"
-        },
-        "fonts": {},
-        "primaryData": {},
-        "results": {},
-        "tokenomics": {},
-        "condition": {},
-        "charts": {},
-        "tags": {},
-        "wallet": {}
-      }
     }
   },
   "keplr": "",
@@ -150,9 +148,9 @@
         }
       },
       "endpoints": {
-        "graphql": "https://gql.jackal.forbole.com/v1/graphql",
-        "graphqlWebsocket": "wss://gql.jackal.forbole.com/v1/graphql",
-        "publicRpcWebsocket": "wss://rpc.jackal.forbole.com/websocket"
+        "graphql": "http://35.222.162.205:8080/v1/graphql",
+        "graphqlWebsocket": "ws://35.222.162.205:8080/v1/graphql",
+        "publicRpcWebsocket": "wss://rpc.jackalprotocol.com/websocket"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",
