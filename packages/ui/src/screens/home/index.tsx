@@ -6,6 +6,7 @@ import Hero from '@/screens/home/components/hero';
 import Tokenomics from '@/screens/home/components/tokenomics';
 import Transactions from '@/screens/home/components/transactions';
 import useStyles from '@/screens/home/styles';
+import StatsBlocks from '@/screens/home/components/stats_blocks';
 
 const Home = () => {
   const { classes } = useStyles();
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <Layout className={classes.root}>
       <DataBlocks className={classes.dataBlocks} />
+      <StatsBlocks className={classes.dataBlocks} />
       <Hero className={classes.hero} />
       <Tokenomics className={classes.tokenomics} />
       <Consensus className={classes.consensus} />
