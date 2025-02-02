@@ -14,7 +14,7 @@ const styles = makeStyles()((theme) => ({
     width: '103px',
     height: '40px',
     background: theme.palette.custom.wallet?.surfaceTwo,
-    borderRadius: '8px',
+    borderRadius: '0',
     color: theme.palette.custom.wallet?.textPrimary,
     '&:hover': {
       background: theme.palette.primary.main,
@@ -31,7 +31,7 @@ const styles = makeStyles()((theme) => ({
   logInButton: {
     background: theme.palette.custom.primaryData.one,
     height: theme.spacing(4),
-    borderRadius: theme.spacing(0.5),
+    borderRadius: '0',
     fontWeight: 600,
     fontSize: theme.spacing(1.75),
     color: theme.palette.common.white,
@@ -55,7 +55,7 @@ const styles = makeStyles()((theme) => ({
   },
   avatar: {
     margin: '0px 20px 0px 5px',
-    borderRadius: '100px',
+    borderRadius: '0',
     [theme.breakpoints.up('lg')]: {
       display: 'flex',
       alignItems: 'center',
@@ -173,7 +173,7 @@ const styles = makeStyles()((theme) => ({
   },
   qrCode: {
     border: 'solid 10px #FFFFFF',
-    borderRadius: '8px',
+    borderRadius: '0',
     backgroundColor: '#FFFFFF',
     [theme.breakpoints.up('md')]: {
       border: 'solid 21px #FFFFFF',
@@ -208,7 +208,7 @@ const styles = makeStyles()((theme) => ({
   walletButton: {
     border: 'solid 1px',
     borderColor: theme.palette.custom.wallet?.surfaceFour,
-    borderRadius: '24px',
+    borderRadius: '0',
     width: '120px',
     height: '120px',
     display: 'flex',
@@ -222,7 +222,7 @@ const styles = makeStyles()((theme) => ({
       borderColor: theme.palette.custom.wallet?.surfaceFour,
     },
     [theme.breakpoints.up('md')]: {
-      borderRadius: '24px',
+      borderRadius: '0',
       width: '153px',
       height: '152px',
     },
@@ -261,7 +261,7 @@ const styles = makeStyles()((theme) => ({
       opacity: 1,
       visibility: 'visible',
       background: theme.palette.custom.wallet?.backgroundTwo,
-      borderRadius: '8px',
+      borderRadius: '0',
     },
   },
   walletIcon: {

@@ -48,7 +48,7 @@ const useStyles = makeStyles()((theme) => ({
     '& .legend-color': {
       width: theme.spacing(1.75),
       height: theme.spacing(1.75),
-      borderRadius: '2px',
+      borderRadius: '0',
       marginRight: theme.spacing(1),
     },
     [theme.breakpoints.up('md')]: {

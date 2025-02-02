@@ -20,7 +20,7 @@ const useStyles = makeStyles()((theme) => ({
   status: {
     padding: theme.spacing(0.5, 1),
     color: 'white',
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: '0',
     background: theme.palette.custom.general.icon,
     '&.retired': {
       background: theme.palette.custom.primaryData.four,

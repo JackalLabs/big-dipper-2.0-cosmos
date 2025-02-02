@@ -7,7 +7,7 @@ const styles = makeStyles()((theme) => ({
     right: '55px',
     opacity: '20%',
     zIndex: 1,
-    borderRadius: theme.spacing(1),
+    borderRadius: '0',
     overflow: 'auto',
     [theme.breakpoints.up('lg')]: {
       right: '120px',
@@ -24,7 +24,7 @@ const styles = makeStyles()((theme) => ({
     backgroundColor:
       theme.palette.mode === 'dark' ? '#282828' : theme.palette.custom.wallet?.surfaceTwo,
     border: `1px solid ${theme.palette.custom.wallet?.surfaceFour}`,
-    borderRadius: theme.spacing(0.5),
+    borderRadius: '0',
     ':hover': {
       backgroundColor:
         theme.palette.mode === 'dark' ? theme.palette.custom.wallet?.surfaceFour : '#12121229',
@@ -40,7 +40,7 @@ const styles = makeStyles()((theme) => ({
   },
   changeWalletButton: {
     height: '46px',
-    borderRadius: theme.spacing(1),
+    borderRadius: '0',
     backgroundColor: 'transparent',
     marginTop: theme.spacing(2.6),
     '&:hover': {
@@ -101,7 +101,7 @@ const styles = makeStyles()((theme) => ({
     height: theme.spacing(1.3),
     width: theme.spacing(1.3),
     backgroundColor: `${theme.palette.custom.wallet.active} !important`,
-    borderRadius: 50,
+    borderRadius: '0',
     display: 'flex',
     position: 'absolute',
     left: '35px',
@@ -112,7 +112,7 @@ const styles = makeStyles()((theme) => ({
     height: theme.spacing(1.3),
     width: theme.spacing(1.3),
     backgroundColor: theme.palette.custom.wallet?.inactive,
-    borderRadius: 50,
+    borderRadius: '0',
     display: 'flex',
     position: 'absolute',
     left: '35px',

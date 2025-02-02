@@ -4,7 +4,7 @@ const useStyles = makeStyles()((theme) => ({
   root: {
     padding: theme.spacing(2),
     background: theme.palette.primary.main,
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: '0',
     height: '110px',
     display: 'flex',
     flexDirection: 'column',

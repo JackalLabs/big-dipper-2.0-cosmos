@@ -42,7 +42,7 @@ const useStyles = makeStyles<{ checked: true | false }>()((theme, { checked }) =
       color: checked ? '#FF835B' : theme.palette.mode === 'dark' ? '#999999' : '#C4C4C4',
     },
     '& .MuiSwitch-track': {
-      borderRadius: 26 / 2,
+      borderRadius: '0',
       backgroundColor: theme.palette.mode === 'dark' ? '#414141' : '#707070',
       opacity: 1,
       transition: theme.transitions.create(['background-color'], {

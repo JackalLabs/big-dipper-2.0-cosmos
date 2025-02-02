@@ -207,7 +207,7 @@ export const common = (theme: ThemeOptions) =>
       MuiTextField: {
         styleOverrides: {
           root: {
-            borderRadius: '12px',
+            borderRadius: '0',
           },
         },
       },
@@ -215,7 +215,7 @@ export const common = (theme: ThemeOptions) =>
         styleOverrides: {
           root: {
             '&': {
-              borderRadius: '12px',
+              borderRadius: '0',
             },
           },
           input: {
@@ -235,7 +235,7 @@ export const common = (theme: ThemeOptions) =>
             background: theme.palette?.background?.paper,
             color: theme.palette?.text?.primary,
             padding: 4,
-            borderRadius: 4,
+            borderRadius: '0',
           },
           arrow: {
             color: theme.palette?.divider,

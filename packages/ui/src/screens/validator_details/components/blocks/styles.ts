@@ -15,7 +15,7 @@ const useStyles = makeStyles()((theme) => ({
   singleBlock: {
     width: '28px',
     height: '28px',
-    borderRadius: '2px',
+    borderRadius: '0',
     background: theme.palette.custom.general.surfaceTwo,
     margin: theme.spacing(0.25),
     '&:hover': {

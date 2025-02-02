@@ -49,7 +49,7 @@ const useStyles = makeStyles()((theme) => ({
     '&:before, &:after, & .hamburger-content': {
       content: '""',
       backgroundColor: theme.palette?.custom.general.icon,
-      borderRadius: '10px',
+      borderRadius: '0',
       display: 'block',
       height: '2px',
       margin: '4px 0',

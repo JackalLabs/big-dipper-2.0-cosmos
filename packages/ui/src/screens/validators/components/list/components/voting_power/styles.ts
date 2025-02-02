@@ -13,7 +13,7 @@ const useStyles = makeStyles<{ percentage: number; topVotingPower: boolean }>()(
     chart: {
       display: 'flex',
       height: '2px',
-      borderRadius: theme.shape.borderRadius,
+      borderRadius: '0',
       background: topVotingPower
         ? Color(theme.palette.custom.fonts.fontFour).alpha(0.2).string()
         : Color(theme.palette.custom.primaryData.three).alpha(0.2).string(),

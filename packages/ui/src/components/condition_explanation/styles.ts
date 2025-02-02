@@ -18,7 +18,7 @@ const useStyles = makeStyles()((theme) => ({
     height: '7px',
     background: theme.palette.custom.condition.zero,
     marginLeft: theme.spacing(1),
-    borderRadius: '50%',
+    borderRadius: '0',
     '&.green': {
       background: theme.palette.custom.condition.one,
     },

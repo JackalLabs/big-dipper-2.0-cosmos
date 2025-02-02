@@ -6,7 +6,7 @@ const useStyles = makeStyles()((theme) => ({
     height: '10px',
     background: theme.palette.custom.condition.zero,
     margin: '0 auto',
-    borderRadius: '50%',
+    borderRadius: '0',
     '&.green': {
       background: theme.palette.custom.condition.one,
     },

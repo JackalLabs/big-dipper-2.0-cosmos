@@ -3,7 +3,7 @@ import Color from 'color';
 
 const useStyles = makeStyles()((theme) => ({
   root: {
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: '0',
     padding: theme.spacing(0.5, 1),
     display: 'inline-block',
     color: theme.palette.custom.tags.zero,

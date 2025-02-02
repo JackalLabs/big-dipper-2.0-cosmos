@@ -27,7 +27,7 @@ const useStyles = makeStyles()((theme) => ({
   button: {
     height: '30px',
     width: '30px',
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: '0',
     padding: theme.spacing(1),
     display: 'flex',
     alignItems: 'center',
@@ -61,7 +61,7 @@ const useStyles = makeStyles()((theme) => ({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      borderRadius: theme.shape.borderRadius,
+      borderRadius: '0',
       paddingLeft: theme.spacing(1),
       paddingRight: theme.spacing(3),
     },

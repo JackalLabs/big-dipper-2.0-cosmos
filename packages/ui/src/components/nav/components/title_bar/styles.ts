@@ -31,7 +31,7 @@ const useStyles = makeStyles()((theme) => ({
     width: '100%',
     background: theme.palette.custom.general.surfaceOne,
     marginTop: theme.spacing(2),
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: '0',
     padding: theme.spacing(1),
     display: 'flex',
     flexDirection: 'column',

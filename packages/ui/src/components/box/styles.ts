@@ -5,7 +5,7 @@ const useStyles = makeStyles()((theme) => ({
     '&&': {
       overflow: 'auto',
       padding: theme.spacing(2),
-      borderRadius: theme.shape.borderRadius,
+      borderRadius: '0',
       background: theme.palette.custom.general.surfaceOne,
     },
   },

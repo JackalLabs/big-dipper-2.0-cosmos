@@ -5,7 +5,7 @@ const useStyles = makeStyles()((theme) => ({
     padding: theme.spacing(0.8, 2),
     background: theme.palette.background.paper,
     color: theme.palette.custom.fonts.fontTwo,
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: '0',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',

@@ -45,7 +45,7 @@ const useStyles = makeStyles()((theme) => ({
       background: 'pink',
       height: '100%',
       position: 'absolute',
-      borderRadius: theme.shape.borderRadius,
+      borderRadius: '0',
       left: 0,
     },
     '&.yes': {

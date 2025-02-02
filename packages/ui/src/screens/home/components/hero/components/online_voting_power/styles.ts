@@ -21,7 +21,7 @@ const useStyles = makeStyles<{ percentage: number | string }>()((theme, { percen
   chart: {
     display: 'flex',
     height: '11px',
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: '0',
     background: Color(theme.palette.primary.main).alpha(0.2).string(),
     overflow: 'hidden',
     margin: theme.spacing(2, 0),

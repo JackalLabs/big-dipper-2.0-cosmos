@@ -6,7 +6,7 @@ const useStyles = makeStyles()((theme) => ({
     height: '28px',
     minWidth: '28px',
     minHeight: '28px',
-    borderRadius: '50%',
+    borderRadius: '0',
     overflow: 'hidden',
     background: theme.palette.custom.general.surfaceTwo,
     display: 'flex',
