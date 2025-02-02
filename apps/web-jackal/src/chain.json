@@ -59,19 +59,19 @@
           "highlight": "#e9f451"
         },
         "primaryData": {
-          "one": "#D3356F",
-          "two": "#B443DB",
-          "three": "#6333ED",
-          "four": "#14AACB"
+          "one": "#117680",
+          "two": "#51A7F5",
+          "three": "#E8D12A",
+          "four": "#F55951"
         },
         "results": {
-          "pass": "#1EC490",
-          "fail": "#f45151"
+          "pass": "#117680",
+          "fail": "#f55951"
         },
         "tokenomics": {
-          "one": "#915EFF",
-          "two": "#19B0C5",
-          "three": "#1EC490"
+          "one": "#E8D12A",
+          "two": "#EaF551",
+          "three": "#F55951"
         },
         "condition": {
           "zero": "#E8E8E8",

@@ -23,6 +23,9 @@ const useStyles = makeStyles()((theme) => ({
           color: theme.palette.custom.fonts.fontThree,
         },
       },
+      '& .MuiButtonBase-root': {
+        color: theme.palette.custom.fonts.fontTwo,
+      },
     },
   },
 }));

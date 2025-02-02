@@ -2,10 +2,7 @@ import { makeStyles } from 'tss-react/mui';
 import Color from 'color';
 
 const useStyles = makeStyles()((theme) => {
-  const iconFill =
-    theme.palette.mode === 'light'
-      ? theme.palette.custom.fonts.fontTwo
-      : theme.palette.custom.general.icon;
+  const iconFill = theme.palette.custom.general.background;
   return {
     root: {
       '& .media': {
@@ -15,6 +12,9 @@ const useStyles = makeStyles()((theme) => {
         },
         '&:last-child': {
           marginRight: 0,
+        },
+        '& > svg > path': {
+          fill: iconFill,
         },
         '& path': {
           transition: 'all 0.3s ease',
