@@ -10,7 +10,7 @@ const useStyles = makeStyles()((theme) => ({
       padding: theme.spacing(2, 2.5),
     },
     '& .MuiListItemText-root': {
-      color: theme.palette.custom.general.icon,
+      color: theme.palette.custom.fonts.fontFour,
     },
     '&.active': {
       background: Color(theme.palette.background.paper).lighten(0.5).string(),

@@ -28,13 +28,13 @@ const useStyles = makeStyles()((theme) => ({
       width: '180px',
     },
     '& .footer__closing--text': {
-      color: theme.palette.custom.fonts.fontThree,
+      color: theme.palette.custom.fonts.fontFour,
     },
     '& .footer__links': {
       marginTop: '1rem',
     },
     '& h3': {
-      color: theme.palette.custom.fonts.fontThree,
+      color: theme.palette.custom.fonts.fontFour,
       fontWeight: 500,
       marginBottom: theme.spacing(2),
       marginTop: theme.spacing(2),
@@ -63,6 +63,7 @@ const useStyles = makeStyles()((theme) => ({
       },
       '&.media': {
         display: 'none',
+        fill: theme.palette.custom.fonts.fontFour,
       },
       [theme.breakpoints.up('lg')]: {
         '& a': {
