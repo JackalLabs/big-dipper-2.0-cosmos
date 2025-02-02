@@ -30,7 +30,7 @@ const Desktop: FC<DesktopProps> = ({ className, title }) => {
             open: isMenu,
           })}
         >
-          <ActionBar toggleNetwork={toggleNetwork} isNetwork={isNetwork} />
+          <ActionBar isNetwork={isNetwork} />
           <TitleBar title={title} />
         </AppBar>
         <Drawer
