@@ -17,11 +17,11 @@ const useStyles = makeStyles()((theme) => ({
       '& .MuiListItemIcon-root': {
         '& svg': {
           fill: theme?.palette?.primary?.main,
-          color: theme?.palette?.primary?.main,
+          color: theme?.palette?.custom?.fonts?.highlight,
         },
       },
       '& .MuiListItemText-root': {
-        color: theme.palette.primary.main,
+        color: theme?.palette?.custom?.fonts?.highlight,
       },
     },
   },

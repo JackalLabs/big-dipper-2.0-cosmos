@@ -52,8 +52,8 @@
         },
         "fonts": {
           "fontOne": "#E6E6E6",
-          "fontTwo": "#e9f451",
-          "fontThree": "#818181",
+          "fontTwo": "#1b1c16",
+          "fontThree": "#1b1c16",
           "fontFour": "#d5d4c2",
           "fontFive": "#FFFFFF",
           "highlight": "#e9f451"
@@ -114,7 +114,7 @@
           "background": "#1b1c16",
           "backgroundTwo": "#c6c5ad",
           "surfaceOne": "#dddcce",
-          "surfaceTwo": "#d5d4c2",
+          "surfaceTwo": "#c6c5ad",
           "surfaceThree": "#c6c5ad",
           "surfaceFour": "#c6c5ad",
           "surfaceFive": "#c6c5ad",
