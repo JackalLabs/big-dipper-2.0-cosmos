@@ -6,7 +6,7 @@ const useStyles = makeStyles()((theme) => ({
       overflow: 'auto',
       padding: theme.spacing(2),
       borderRadius: theme.shape.borderRadius,
-      background: theme.palette.background.paper,
+      background: theme.palette.custom.general.surfaceOne,
     },
   },
 }));
