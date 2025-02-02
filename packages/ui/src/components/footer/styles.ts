@@ -65,6 +65,9 @@ const useStyles = makeStyles()((theme) => ({
         display: 'none',
         fill: theme.palette.custom.fonts.fontFour,
       },
+      '&.media path': {
+        fill: theme.palette.custom.fonts.fontFour,
+      },
       [theme.breakpoints.up('lg')]: {
         '& a': {
           borderBottom: 'none',
@@ -73,6 +76,9 @@ const useStyles = makeStyles()((theme) => ({
         },
         '&.media': {
           display: 'grid',
+        },
+        '&.media path': {
+          fill: theme.palette.custom.fonts.fontFour,
         },
       },
     },
