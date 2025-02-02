@@ -21,7 +21,7 @@ const TitleBar: FC<TitleBarProps> = ({ className, title }) => {
   return (
     <div className={cx(classes.root, className)} style={{ alignItems: 'start' }}>
       {!!title && <Typography variant="h1">{title}</Typography>}
-      <div className={classes.content} style={{ height: '56px' }}>
+      <div className={classes.content} style={{ minHeight: '56px' }}>
         {market.map((x) => (
           <div key={x.key} className={classes.item}>
             <Typography variant="body1" className="label">
