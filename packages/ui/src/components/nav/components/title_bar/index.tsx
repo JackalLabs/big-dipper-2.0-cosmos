@@ -2,7 +2,6 @@ import Typography from '@mui/material/Typography';
 import useAppTranslation from '@/hooks/useAppTranslation';
 import { FC } from 'react';
 import { useRecoilValue } from 'recoil';
-import ChainIcon from '@/components/ChainIcon';
 import useStyles from '@/components/nav/components/title_bar/styles';
 import { formatMarket } from '@/components/nav/components/title_bar/utils';
 import { readMarket } from '@/recoil/market';
@@ -21,7 +20,6 @@ const TitleBar: FC<TitleBarProps> = ({ className, title }) => {
 
   return (
     <div className={cx(classes.root, className)}>
-      {!title && <ChainIcon type="logo" className={classes.logo} alt="logo" />}
       {!!title && <Typography variant="h1">{title}</Typography>}
       <div className={classes.content}>
         {market.map((x) => (

@@ -13,7 +13,7 @@ const useStyles = makeStyles()((theme) => ({
       width: '300px',
       '& .MuiInputBase-root': {
         width: '100%',
-        background: theme.palette.custom.general.surfaceTwo,
+        background: theme.palette.custom.general.surfaceOne,
         padding: theme.spacing(0.4, 1.2),
         borderRadius: theme.shape.borderRadius,
       },

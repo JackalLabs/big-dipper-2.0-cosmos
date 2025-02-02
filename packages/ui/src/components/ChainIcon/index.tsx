@@ -41,7 +41,8 @@ import coreumIconBoth from 'shared-utils/assets/icons/coreum-both.svg?url';
 import kyveIconBoth from 'shared-utils/assets/icons/kyve-both.svg?url';
 import humansaiIconDark from 'shared-utils/assets/icons/humansai-both.svg?url';
 import gitopiaIconDark from 'shared-utils/assets/icons/gitopia-both.svg?url';
-import jackalIconBoth from 'shared-utils/assets/icons/jackal-both.svg?url';
+import jackalIconLight from 'shared-utils/assets/icons/jackal-light.svg?url';
+import jackalIconDark from 'shared-utils/assets/icons/jackal-dark.svg?url';
 import archwayIconBoth from 'shared-utils/assets/icons/archway-both.svg?url';
 import agoricLogoLight from 'shared-utils/assets/logos/agoric-light.png';
 import akashLogoDark from 'shared-utils/assets/logos/akash-dark.svg?url';
@@ -283,7 +284,7 @@ const ChainIcon = ({
       break;
     case 'jackal':
       [iconDark, iconLight] =
-        type === 'icon' ? [jackalIconBoth, jackalIconBoth] : [jackalLogoDark, jackalLogoLight];
+        type === 'icon' ? [jackalIconLight, jackalIconDark] : [jackalLogoDark, jackalLogoLight];
       break;
     case 'archway':
       [iconDark, iconLight] =

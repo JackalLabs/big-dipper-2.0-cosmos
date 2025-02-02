@@ -16,7 +16,7 @@ const useStyles = makeStyles()((theme) => ({
       background: Color(theme.palette.background.paper).lighten(0.5).string(),
       '& .MuiListItemIcon-root': {
         '& svg': {
-          fill: theme?.palette?.primary?.main,
+          fill: theme?.palette?.custom?.fonts?.highlight,
           color: theme?.palette?.custom?.fonts?.highlight,
         },
       },
