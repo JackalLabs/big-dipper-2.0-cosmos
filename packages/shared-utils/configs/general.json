@@ -1,9 +1,9 @@
 {
   "maintainer": {
-    "name": "Forbole",
-    "url": "https://forbole.com"
+    "name": "Jackal Labs",
+    "url": "https://www.jackallabs.io/"
   },
   "github": {
-    "reportIssue": "https://github.com/forbole/big-dipper-2.0-cosmos/issues"
+    "reportIssue": "https://github.com/JackalLabs/big-dipper-2.0-cosmos/issues"
   }
 }

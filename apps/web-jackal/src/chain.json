@@ -36,7 +36,7 @@
       },
       "background": {
         "default": "#DDDCCE",
-        "paper": "#c6c5ad"
+        "paper": "#1b1c16"
       },
       "divider": "#363A51",
       "text": {
@@ -48,15 +48,15 @@
           "background": "#dddcce",
           "surfaceOne": "#c6c5ad",
           "surfaceTwo": "#d5d4c2",
-          "icon": "#999999"
+          "icon": "#d5d4c2"
         },
         "fonts": {
           "fontOne": "#E6E6E6",
-          "fontTwo": "#C4C4C4",
+          "fontTwo": "#1b1c16",
           "fontThree": "#818181",
-          "fontFour": "#999999",
+          "fontFour": "#d5d4c2",
           "fontFive": "#FFFFFF",
-          "highlight": "#6AA6FF"
+          "highlight": "#e9f451"
         },
         "primaryData": {
           "one": "#D3356F",

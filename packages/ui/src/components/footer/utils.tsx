@@ -1,4 +1,4 @@
-const FORBOLE_URL = 'https://www.forbole.com';
+const FORBOLE_URL = 'https://www.jackalprotocol.com';
 const BIG_DIPPER_URL = 'https://bigdipper.live';
 
 export const donateLink = {
@@ -8,19 +8,11 @@ export const donateLink = {
 
 export const footerLinks = [
   {
-    key: 'company',
+    key: 'jackalProtocol',
     links: [
       {
-        key: 'forbole',
+        key: 'website',
         url: FORBOLE_URL,
-      },
-      {
-        key: 'stakeNow',
-        url: `${FORBOLE_URL}/stake-now`,
-      },
-      {
-        key: 'contact',
-        url: `${FORBOLE_URL}/contact`,
       },
       {
         key: 'blog',

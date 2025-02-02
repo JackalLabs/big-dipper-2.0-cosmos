@@ -20,7 +20,7 @@ type DesktopProps = {
 const Desktop: FC<DesktopProps> = ({ className, title }) => {
   const { classes, cx } = useStyles();
   const theme = useRecoilValue(readTheme);
-  const { isMenu, toggleMenu, turnOffAll, toggleNetwork, isNetwork } = useDesktop();
+  const { isMenu, toggleMenu, turnOffAll, isNetwork } = useDesktop();
   return (
     <ClickAwayListener onClickAway={turnOffAll}>
       <div className={cx(classes.root, className)}>

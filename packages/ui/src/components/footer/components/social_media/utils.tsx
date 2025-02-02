@@ -9,21 +9,16 @@ export const socialMediaLinks: {
   {
     component: <TelegramIcon />,
     className: 'telegram',
-    url: 'https://t.me/forbole',
-  },
-  {
-    component: <LinkedinIcon />,
-    className: 'linkedin',
-    url: 'https://www.linkedin.com/company/forbole',
+    url: 'https://t.me/jackal_tg',
   },
   {
     component: <TwitterIcon />,
     className: 'twitter',
-    url: 'https://twitter.com/bigdipperlive',
+    url: 'https://twitter.com/Jackal_Protocol',
   },
   {
     component: <GithubIcon />,
     className: 'github',
-    url: 'https://github.com/forbole',
+    url: 'https://github.com/JackalLabs',
   },
 ];
