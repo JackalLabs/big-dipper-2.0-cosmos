@@ -148,8 +148,8 @@
         }
       },
       "endpoints": {
-        "graphql": "http://35.222.162.205:8080/v1/graphql",
-        "graphqlWebsocket": "ws://35.222.162.205:8080/v1/graphql",
+        "graphql": "https://qq.scan.jackalprotocol.com/v1/graphql",
+        "graphqlWebsocket": "wss://qq.scan.jackalprotocol.com/v1/graphql",
         "publicRpcWebsocket": "wss://rpc.jackalprotocol.com/websocket"
       },
       "marketing": {
