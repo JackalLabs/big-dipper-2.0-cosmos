@@ -1,6 +1,6 @@
 {
   "chainName": "jackal",
-  "title": "Jackal Scan",
+  "title": "Jackal Protocol",
   "extra": {
     "profile": false,
     "graphqlWs": true

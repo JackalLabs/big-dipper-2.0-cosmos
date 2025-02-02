@@ -11,7 +11,7 @@ const useStyles = makeStyles()((theme) => ({
     '& .MuiInputBase-input': {
       textOverflow: 'ellipsis',
       '&::placeholder': {
-        color: theme.palette.custom.fonts.fontFour,
+        color: theme.palette.custom.fonts.fontTwo,
       },
     },
   },

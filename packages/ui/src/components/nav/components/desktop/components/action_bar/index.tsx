@@ -1,6 +1,6 @@
 // import ConnectWallet from '@/components/nav/components/connect_wallet';
 import NetworkList from '@/components/nav/components/desktop/components/action_bar/components/network_list';
-import SettingsList from '@/components/nav/components/desktop/components/action_bar/components/settings_list';
+// import SettingsList from '@/components/nav/components/desktop/components/action_bar/components/settings_list';
 import useStyles from '@/components/nav/components/desktop/components/action_bar/styles';
 import SearchBar from '@/components/nav/components/search_bar';
 // import WalletDetails from '@/components/nav/components/wallet_details';
@@ -20,7 +20,7 @@ const ActionBar: FC<ActionBarProps> = ({ className, isNetwork }) => {
       <div className={classes.actions}>
         <SearchBar className={cx(classes.searchBar, { open: isNetwork })} />
         {/* <WalletDetails /> */}
-        <SettingsList />
+        {/* <SettingsList /> */}
         {/* <ConnectWallet /> */}
       </div>
       <NetworkList

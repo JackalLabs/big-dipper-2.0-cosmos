@@ -21,6 +21,7 @@ const useStyles = makeStyles()((theme) => ({
     },
     '&& h1': {
       lineHeight: '56px',
+      marginRight: '1rem',
     },
   },
   logo: {

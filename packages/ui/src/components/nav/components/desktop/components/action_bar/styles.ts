@@ -5,15 +5,15 @@ const useStyles = makeStyles()((theme) => ({
     width: '100%',
     background: theme.palette.background.default,
     display: 'flex',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     alignItems: 'center',
     padding: theme.spacing(3),
   },
   actions: {
-    width: '70%',
+    width: '100%',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'start',
     zIndex: 5000,
   },
   searchBar: {
