@@ -30,7 +30,11 @@ export function SpaceUsed() {
         Space Used
       </Typography>
       <div className="content">
-        <Typography variant="h1">{totalFiles} TB</Typography>
+        {totalFiles === null ? (
+          <Typography variant="h1">Loading...</Typography> // Show a placeholder
+        ) : (
+          <Typography variant="h1">{totalFiles} TB</Typography>
+        )}{' '}
       </div>
     </div>
   );

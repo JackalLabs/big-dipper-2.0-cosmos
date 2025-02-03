@@ -40,7 +40,11 @@ const POL: FC<PolBlockProps> = ({ price }) => {
         Protocol Owned Liquidity
       </Typography>
       <div className="content">
-        <Typography variant="h1">{totalFiles}</Typography>
+        {totalFiles === null ? (
+          <Typography variant="h1">Loading...</Typography> // Show a placeholder
+        ) : (
+          <Typography variant="h1">{totalFiles} TB</Typography>
+        )}
       </div>
     </div>
   );
