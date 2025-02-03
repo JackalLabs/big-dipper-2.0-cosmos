@@ -11,7 +11,6 @@ let component: renderer.ReactTestRenderer;
 // mocks
 // ==================================
 let isNetwork = false;
-const toggleNetwork = jest.fn();
 jest.mock(
   '@/components/nav/components/desktop/components/action_bar/components/network',
   () => (props: JSX.IntrinsicElements['div']) => <div id="network" {...props} />
@@ -51,7 +50,7 @@ describe('screen: Nav/ActionBar', () => {
   beforeEach(() => {
     component = renderer.create(
       <MockTheme>
-        <ActionBar isNetwork={isNetwork} toggleNetwork={toggleNetwork} />
+        <ActionBar isNetwork={isNetwork} />
       </MockTheme>
     );
   });
@@ -65,7 +64,7 @@ describe('screen: Nav/ActionBar', () => {
     isNetwork = true;
     component.update(
       <MockTheme>
-        <ActionBar isNetwork={isNetwork} toggleNetwork={toggleNetwork} />
+        <ActionBar isNetwork={isNetwork} />
       </MockTheme>
     );
     const tree = component?.toJSON();

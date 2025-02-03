@@ -31,7 +31,7 @@ export function TotalUsers() {
         {totalFiles === null ? (
           <Typography variant="h1">Loading...</Typography> // Show a placeholder
         ) : (
-          <Typography variant="h1">{totalFiles} TB</Typography>
+          <Typography variant="h1">{totalFiles}</Typography>
         )}
       </div>
     </div>
