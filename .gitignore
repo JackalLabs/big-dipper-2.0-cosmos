@@ -50,7 +50,6 @@ vercel.json
 # Yarn Berry
 .yarn/*
 .yarn
-.yarnrc.yml
 .yarn/cache
 !.yarn/cache
 !.yarn/patches
