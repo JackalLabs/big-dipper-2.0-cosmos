@@ -14,16 +14,20 @@ const useStyles = makeStyles()((theme) => ({
     },
   },
   blockHeight: {
-    background: theme.palette.custom.primaryData.one,
+    // background: theme.palette.custom.primaryData.one,
+    background: '#1B1C16',
   },
   blockTime: {
-    background: theme.palette.custom.primaryData.two,
+    // background: theme.palette.custom.primaryData.two,
+    background: '#1B1C16',
   },
   price: {
-    background: theme.palette.custom.primaryData.three,
+    // background: theme.palette.custom.primaryData.three,
+    background: '#1B1C16',
   },
   validators: {
-    background: theme.palette.custom.primaryData.four,
+    // background: theme.palette.custom.primaryData.four,
+    background: '#1B1C16',
   },
 }));
 

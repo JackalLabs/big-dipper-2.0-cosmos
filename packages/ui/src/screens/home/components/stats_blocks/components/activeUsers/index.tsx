@@ -24,8 +24,8 @@ export function ActiveUsers() {
 
   return (
     <div className={cx(classes.root)}>
-      <Typography variant="body2" className="label">
-        Active Users
+      <Typography variant="h4" className="label">
+        <strong>Active Users</strong>
       </Typography>
       <div className="content">
         <Typography variant="h1">{totalFiles}</Typography>

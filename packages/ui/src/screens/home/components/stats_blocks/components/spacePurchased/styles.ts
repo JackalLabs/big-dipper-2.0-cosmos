@@ -3,7 +3,7 @@ import { makeStyles } from 'tss-react/mui';
 const useStyles = makeStyles()((theme) => ({
   root: {
     padding: theme.spacing(2),
-    background: theme.palette.custom.primaryData.one,
+    background: '#1B1C16',
     borderRadius: '0',
     height: '110px',
     display: 'flex',

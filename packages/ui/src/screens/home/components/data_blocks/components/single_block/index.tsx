@@ -15,14 +15,14 @@ const SingleBlock: FC<SingleBlockProps> = ({ className, label, value, descriptio
 
   return (
     <div className={cx(classes.root, className)}>
-      <Typography variant="body2" className="label">
-        {label}
+      <Typography variant="h4" className="label">
+        <strong>{label}</strong>
       </Typography>
       <div className="content">
         <Typography variant="h1">{value}</Typography>
         <div className="flexContent">
           {!!description && (
-            <Typography variant="caption" className="description">
+            <Typography variant="body2" className="description">
               {description}
             </Typography>
           )}
