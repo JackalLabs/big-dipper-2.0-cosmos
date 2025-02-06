@@ -13,21 +13,23 @@ const useStyles = makeStyles()((theme) => ({
       gridTemplateColumns: 'repeat(4, 1fr)',
     },
   },
-  blockHeight: {
-    // background: theme.palette.custom.primaryData.one,
+  darkBg: {
     background: '#1B1C16',
+  },
+  test: {
+    background: 'pink',
+  },
+  blockHeight: {
+    background: theme.palette.custom.primaryData.one,
   },
   blockTime: {
-    // background: theme.palette.custom.primaryData.two,
-    background: '#1B1C16',
+    background: theme.palette.custom.primaryData.two,
   },
   price: {
-    // background: theme.palette.custom.primaryData.three,
-    background: '#1B1C16',
+    background: theme.palette.custom.primaryData.three,
   },
   validators: {
-    // background: theme.palette.custom.primaryData.four,
-    background: '#1B1C16',
+    background: theme.palette.custom.primaryData.four,
   },
 }));
 

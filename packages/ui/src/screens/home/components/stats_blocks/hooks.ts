@@ -1,5 +1,5 @@
 import numeral from 'numeral';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import chainConfig from '@/chainConfig';
 import {
   TokenPriceListenerSubscription,
@@ -9,35 +9,142 @@ import {
 const { primaryTokenUnit, tokenUnits } = chainConfig();
 
 type StatsBlockState = {
-  price: number | null;
+  totalFiles: number;
+  activeUsers: number;
+  totalUsers: number;
+  spacePurchased: number;
+  spaceAvailable: number;
+  spaceUsed: number;
+  pol: number | null;
 };
 
-const formatTokenPrice = (data: TokenPriceListenerSubscription, state: StatsBlockState) => {
-  if (data?.tokenPrice[0]?.price) {
-    return numeral(numeral(data?.tokenPrice[0]?.price).format('0.0000', Math.floor)).value();
-  }
-  return state.price;
-};
+// const formatTokenPrice = (data: TokenPriceListenerSubscription, state: StatsBlockState) => {
+//   if (data?.tokenPrice[0]?.price) {
+//     return numeral(numeral(data?.tokenPrice[0]?.price).format('0.0000', Math.floor)).value();
+//   }
+//   return state.price;
+// };
 
 export const useStatsBlocks = () => {
   const [state, setState] = useState<StatsBlockState>({
-    price: null,
-  });
-  // ====================================
-  // token price
-  // ====================================
-  useTokenPriceListenerSubscription({
-    variables: {
-      denom: tokenUnits?.[primaryTokenUnit]?.display,
-    },
-    onData: (data) => {
-      setState((prevState) => ({
-        ...prevState,
-        price: data.data.data ? formatTokenPrice(data.data.data, state) : 0,
-      }));
-    },
+    totalFiles: 0,
+    activeUsers: 0,
+    totalUsers: 0,
+    spacePurchased: 0,
+    spaceAvailable: 0,
+    spaceUsed: 0,
+    pol: null,
   });
 
+  // Fetch Total Files
+  useEffect(() => {
+    fetchTotalFiles();
+    fetchActiveUsers();
+    fetchTotalUsers();
+    fetchSpacePurchased();
+    fetchSpaceAvailable();
+    fetchSpaceUsed();
+  }, []);
+
+  async function fetchTotalFiles() {
+    try {
+      const response = await fetch('https://stats-api.jackallabs.io/total_files');
+      if (!response.ok) throw new Error('Failed to fetch data');
+      const data = await response.json();
+      const latest = data.data[data.data.length - 1]?.value;
+      setState((prev) => ({
+        ...prev,
+        totalFiles: latest,
+      }));
+    } catch (err: any) {
+      console.warn(err);
+    }
+  }
+  async function fetchActiveUsers() {
+    try {
+      const response = await fetch('https://stats-api.jackallabs.io/active_users');
+      if (!response.ok) throw new Error('Failed to fetch data');
+      const data = await response.json();
+      const latest = data.data[data.data.length - 1]?.value;
+      setState((prev) => ({
+        ...prev,
+        activeUsers: latest,
+      }));
+    } catch (err: any) {
+      console.warn(err);
+    }
+  }
+  async function fetchTotalUsers() {
+    try {
+      const response = await fetch('https://stats-api.jackallabs.io/total_users');
+      if (!response.ok) throw new Error('Failed to fetch data');
+      const data = await response.json();
+      const latest = data.data[data.data.length - 1]?.value;
+      setState((prev) => ({
+        ...prev,
+        totalUsers: latest,
+      }));
+    } catch (err: any) {
+      console.warn(err);
+    }
+  }
+  async function fetchSpacePurchased() {
+    try {
+      const response = await fetch('https://stats-api.jackallabs.io/purchased');
+      if (!response.ok) throw new Error('Failed to fetch data');
+      const data = await response.json();
+      const latest = data.data[data.data.length - 1]?.value;
+      setState((prev) => ({
+        ...prev,
+        spacePurchased: Math.round(100 * (latest * 0.00000000000033)) / 100 + ' TB',
+      }));
+    } catch (err: any) {
+      console.warn(err);
+    }
+  }
+  async function fetchSpaceAvailable() {
+    try {
+      const response = await fetch('https://stats-api.jackallabs.io/available_space');
+      if (!response.ok) throw new Error('Failed to fetch data');
+      const data = await response.json();
+      const latest = data.data[data.data.length - 1]?.value;
+      setState((prev) => ({
+        ...prev,
+        spaceAvailable: Math.round(100 * (latest * 0.00000000000033)) / 100 + ' TB',
+      }));
+    } catch (err: any) {
+      console.warn(err);
+    }
+  }
+  async function fetchSpaceUsed() {
+    try {
+      const response = await fetch('https://stats-api.jackallabs.io/used');
+      if (!response.ok) throw new Error('Failed to fetch data');
+      const data = await response.json();
+      const latest = data.data[data.data.length - 1]?.value;
+      setState((prev) => ({
+        ...prev,
+        spaceUsed: Math.round(100 * (latest * 0.00000000000033)) / 100 + ' TB',
+      }));
+    } catch (err: any) {
+      console.warn(err);
+    }
+  }
+
+  async function fetchPOL() {
+    try {
+      const response = await fetch('https://stats-api.jackallabs.io/protocol_balance');
+      if (!response.ok) throw new Error('Failed to fetch data');
+      const data = await response.json();
+      const latest = data.data[data.data.length - 1]?.value;
+      setState((prev) => ({
+        ...prev,
+        spaceUsed: Math.round(100 * (latest * 0.00000000000033)) / 100 + ' TB',
+      }));
+    } catch (err: any) {
+      console.warn(err);
+    }
+  }
   return {
     state,
   };

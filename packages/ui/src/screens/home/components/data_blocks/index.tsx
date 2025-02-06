@@ -14,19 +14,19 @@ const DataBlocks: FC<ComponentDefault> = ({ className }) => {
     {
       key: t('latestBlock'),
       value: numeral(state.blockHeight).format('0,0'),
-      className: classes.blockHeight,
+      className: classes.darkBg,
     },
     {
       key: t('averageBlockTime'),
       value: `${numeral(state.blockTime).format('0.00')} s`,
-      className: classes.blockTime,
+      className: classes.darkBg,
     },
     {
       key: t('price'),
       value: state.price !== null ? `$${numeral(state.price).format('0.000')}` : 'N/A',
       description: t('dataFrom'),
       Icon: <CoinGeckoIcon />,
-      className: classes.price,
+      className: classes.darkBg,
     },
     {
       key: t('activeValidators'),
@@ -34,7 +34,7 @@ const DataBlocks: FC<ComponentDefault> = ({ className }) => {
       description: t('outOfValidators', {
         num: numeral(state.validators.total).format('0,0'),
       }),
-      className: classes.validators,
+      className: classes.darkBg,
     },
   ];
 
