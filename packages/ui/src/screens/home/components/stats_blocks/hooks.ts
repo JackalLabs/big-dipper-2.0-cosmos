@@ -18,13 +18,6 @@ type StatsBlockState = {
   pol: number | null;
 };
 
-// const formatTokenPrice = (data: TokenPriceListenerSubscription, state: StatsBlockState) => {
-//   if (data?.tokenPrice[0]?.price) {
-//     return numeral(numeral(data?.tokenPrice[0]?.price).format('0.0000', Math.floor)).value();
-//   }
-//   return state.price;
-// };
-
 export const useStatsBlocks = () => {
   const [state, setState] = useState<StatsBlockState>({
     totalFiles: 0,

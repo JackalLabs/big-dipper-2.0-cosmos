@@ -57,9 +57,11 @@ const useStyles = makeStyles()((theme) => ({
     },
     '&.active': {
       '&:before': {
+        backgroundColor: theme.palette?.custom.general.surfaceTwo,
         transform: 'translateY(7px) rotate(137deg)',
       },
       '&:after': {
+        backgroundColor: theme.palette?.custom.general.surfaceTwo,
         transform: 'translateY(-5px) rotate(-140deg)',
       },
       '& .hamburger-content': {
