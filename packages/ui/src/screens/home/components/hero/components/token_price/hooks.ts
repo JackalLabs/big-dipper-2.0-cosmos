@@ -69,7 +69,7 @@ const tickTimeFormatter = (
   throw new Error('Invalid parameters');
 };
 
-const tickPriceFormatter = (num: number) => Number(numeral(num).format('0,0.00000'));
+const tickPriceFormatter = (num: number) => Number(numeral(num).format('0,0.000'));
 
 export const usePrice = (items: TokenPriceType[], theme: Theme) => {
   const { i18n } = useAppTranslation('home');
@@ -102,13 +102,27 @@ export const usePrice = (items: TokenPriceType[], theme: Theme) => {
         timeFormatter: (t: UTCTimestamp) =>
           tickTimeFormatter(t as UTCTimestamp, dateFormat, timeFormat, true),
       },
+      layout: {
+        fontFamily: "'Roboto', sans-serif",
+        background: { color: '#1B1C16' },
+        textColor: '#DDDCCE',
+        attributionLogo: false,
+      },
+      grid: {
+        vertLines: { visible: false },
+        horzLines: { visible: false },
+      },
+      crosshair: {
+        vertLine: { color: '#DDDCCE' },
+        horzLine: { visible: false },
+      },
       autoSize: true,
     });
     chart.timeScale().fitContent();
 
     const lineSeries = chart.addLineSeries({
-      color: theme.palette.custom.primaryData.one,
-      lineWidth: 2,
+      color: '#E9F450',
+      lineWidth: 3,
       priceScaleId: 'right',
     });
 
@@ -150,20 +164,6 @@ export const usePrice = (items: TokenPriceType[], theme: Theme) => {
     };
 
     chart.applyOptions({
-      layout: {
-        background: { type: ColorType.Solid, color: theme.palette.background.paper },
-        textColor: theme.palette.text.primary,
-      },
-      grid: {
-        vertLines: {
-          color: theme.palette.divider,
-          style: LineStyle.Dotted,
-        },
-        horzLines: {
-          color: theme.palette.divider,
-          style: LineStyle.Dotted,
-        },
-      },
       timeScale: timeScaleOptions,
     });
 
